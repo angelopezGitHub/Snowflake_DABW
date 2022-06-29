@@ -4,7 +4,7 @@ streamlit.title('My Parents New Healty Diner')
 streamlit.header('This is how it starts with streamlit/python/snowflake')
 
 streamlit.subheader('Menu')
-streamlit.text(":shark: Tuna Sandwich")
+streamlit.text(":shark:")
 streamlit.text('chicken breast Sandwich')
 streamlit.text('Tuna Salad')
 
