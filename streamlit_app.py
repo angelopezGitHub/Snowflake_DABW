@@ -29,4 +29,4 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 #show as a list, only mentioned columns
 #streamlit.dataframe(my_fruit_list)
-streamlit.dataframe(fruits_to_show,columns=('Fruit','Serving_Size','Calories'))
+streamlit.dataframe(fruits_to_show,columns('Fruit','Serving_Size','Calories'))
