@@ -27,6 +27,6 @@ fruits_selected = streamlit.multiselect("Select some fruits: ", list(my_fruit_li
 
 fruits_to_show = my_fruit_list.loc[fruits_selected]
 
-#show as a list
+#show as a list, only mentioned columns
 #streamlit.dataframe(my_fruit_list)
-streamlit.dataframe(fruits_to_show)
+streamlit.dataframe(fruits_to_show,columns=('Fruit','Serving_Size','Calories'))
