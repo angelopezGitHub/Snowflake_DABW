@@ -1,6 +1,5 @@
 import streamlit
 import pandas
-import request
 
 streamlit.title('My Parents New Healty Diner')
 streamlit.header('This is how it starts with streamlit/python/snowflake')
@@ -31,7 +30,3 @@ fruits_to_show = my_fruit_list.loc[fruits_selected]
 #show as a list, only mentioned columns
 #streamlit.dataframe(my_fruit_list)
 streamlit.dataframe(fruits_to_show)
-
-#using new request
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.text(fruityvice_response)
