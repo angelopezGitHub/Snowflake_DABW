@@ -38,6 +38,7 @@ streamlit.header("Fruityvice Fruit Advice!")
 fruit_choice = streamlit.text_input('What fruit do you like info about?','kiwi')
 streamlit.write('The user is asking for',fruit_choice)
 
+import snowflake.connector
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 # pasing json data to show it better
